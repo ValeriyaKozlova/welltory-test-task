@@ -1,0 +1,102 @@
+.section-info {
+  margin-top: 70px;
+  .info-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .grid-container {
+      width: 691px;
+      display: grid;
+      grid-template-columns: 4fr 1fr 1fr;
+      grid-gap: 15px;
+      padding: 15px 0px;
+      &:first-child {
+        padding-top: 0;
+      }
+      p {
+        &:first-child {
+          text-align: left;
+        }
+      }
+      &.header-info {
+        p {
+          border-bottom: 1px solid grey;
+          font-size: 22px;
+          line-height: 25px;
+          &.pro {
+            color: transparent;
+            background-clip: text;
+            background-image: $gradient;
+            border-bottom: 4px solid grey;
+            border-color: $gradient;
+            border-image: $gradient;
+            border-image-slice: 1;
+          }
+        }
+      }
+    }
+    .point_wrapper {
+      flex-direction: column;
+      .sub_point_wrapper {
+        border-bottom: 1px solid grey;
+        p {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .point-no {
+            height: 1px;
+            background: $grey-light-color;
+            width: 20px;
+          }
+          .point-yes {
+            position: relative;
+            width: 10px;
+            height: 17px;
+            display: inline-block;
+            &:after,
+            &:before {
+              position: absolute;
+              content: '';
+              bottom: 0;
+              display: block;
+              height: 1px;
+              background: $green-color;
+            }
+            &:after {
+              right: -17px;
+              width: 17px;
+              transform-origin: top left;
+              transform: rotate(-45deg);
+            }
+            &:before {
+              left: 0;
+              width: 10px;
+              transform: rotate(45deg);
+              transform-origin: bottom right;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-info {
+    .info-wrapper {
+      .grid-container {
+        width: 90vw;
+        display: grid;
+        grid-template-columns: 4fr 1fr 1fr;
+        grid-gap: 15px;
+        p {
+          &:first-child {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

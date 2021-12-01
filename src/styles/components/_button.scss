@@ -1,0 +1,25 @@
+button {
+  height: 48px;
+  width: 337px;
+  border-radius: 5px;
+  mix-blend-mode: normal;
+  font-size: 19px;
+  line-height: 22px;
+  margin: 10px;
+  margin-top: 30px;
+  margin-bottom: 13px;
+  transition: all 0.2s;
+  background-color: transparent;
+  border: 1px solid $font-color;
+  color: $font-color;
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  &.gradient {
+    background: $gradient;
+    border: none;
+    box-shadow: 0px 13.2985px 26.5969px rgba(255, 0, 63, 0.2);
+    color: $ink-color;
+  }
+}

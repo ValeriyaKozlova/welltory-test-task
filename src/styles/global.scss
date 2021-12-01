@@ -1,6 +1,7 @@
 @import './variables/_colors.scss';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import './grid/grid';
+// @import './grid/grid';
+@import './normalize/normalize';
 
 html {
   scroll-behavior: smooth;
@@ -9,16 +10,54 @@ html {
 body {
   font-family: 'Monserrat', sans-serif;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: normal;
   letter-spacing: 0.01em;
   line-height: 20px;
   color: $font-color;
-  background: $background-color;
+  background: $ink-color;
+  background-image: url('../images/bg_img.png');
+  background-attachment: fixed;
 }
 
 h1 {
-  font-style: 37px;
+  font-size: 37px;
   line-height: 40px;
+  font-weight: normal;
+}
+h1,
+h2,
+h3 {
+  letter-spacing: 0.02em;
+}
+h2,
+h3 {
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 25px;
 }
 
-@import './normalize/normalize';
+section {
+  text-align: center;
+}
+
+h3 {
+  color: transparent;
+  background-clip: text;
+  background-image: $gradient;
+  margin-top: 46px;
+  margin-bottom: 20px;
+}
+.font-s {
+  font-size: 12px;
+  line-height: 18px;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 10px;
+}
+@import './components/_button';
+@import './components/_header';
+@import './components/_footer';
+@import './components/_subscriptions';
+@import './components/_subscriptionsInfo';

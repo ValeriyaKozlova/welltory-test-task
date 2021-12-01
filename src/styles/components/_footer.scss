@@ -1,0 +1,52 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 30px 15px;
+  font-size: 16px;
+  font-weight: 200;
+  ul {
+    span {
+      opacity: 0.4;
+      margin-right: 5px;
+    }
+    list-style: none;
+    a {
+      margin: 0 10px;
+    }
+  }
+  nav {
+    a {
+      color: $font-color;
+      text-decoration: none;
+      transition: all 0.2s;
+      padding: 5px 15px;
+      opacity: 0.4;
+      &:first-child {
+        border-right: 1px solid $font-color;
+      }
+      &:hover {
+        color: transparent;
+        background-clip: text;
+        background-image: $gradient;
+        opacity: 1;
+        &:first-child {
+          border-right: 1px solid rgba(255, 255, 255, 0.4);
+        }
+      }
+    }
+  }
+  ul,
+  .footer-download,
+  .footer-social {
+    display: flex;
+    align-items: center;
+  }
+  .footer-social {
+    ul {
+      li {
+        opacity: 0.4;
+      }
+    }
+  }
+}

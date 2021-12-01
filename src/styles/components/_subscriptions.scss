@@ -1,0 +1,99 @@
+.sub-wrapper {
+  display: flex;
+  justify-content: center;
+  .subscription_card {
+    width: 337px;
+    height: 190px;
+    background: $card-bg-color;
+    padding: 26px 30px;
+    padding-top: 57px;
+    transition: all 0.2s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid $card-bg-color;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-weight: normal;
+    &.selected {
+      border-image: $gradient;
+      border-image-slice: 1;
+      border-radius: 4px;
+      .off-wrapper {
+        background: $yellow-color;
+        color: $ink-color;
+        .off {
+          &:before {
+            border-color: transparent transparent $yellow-color transparent;
+          }
+        }
+      }
+      .cart-wrapper-price {
+        .price {
+          color: $yellow-color;
+        }
+      }
+    }
+    .cart-wrapper-price {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      font-size: 22px;
+      .price {
+        color: $blue-color;
+      }
+      .old-price {
+        position: absolute;
+        right: 0;
+        bottom: -100%;
+        text-decoration: line-through;
+        color: $grey-color;
+        font-size: 16px;
+      }
+    }
+    .info {
+      font-size: 12px;
+      text-align-last: left;
+    }
+    .off-wrapper {
+      position: absolute;
+      top: -6px;
+      background: $blue-color;
+      transition: all 0.2s;
+      width: 98px;
+      height: 38px;
+      padding: 11px 23px;
+      border-radius: 0px 4px 4px 4px;
+      .off {
+        position: relative;
+        font-size: 19px;
+        &:before {
+          content: '';
+          position: absolute;
+          top: -11px;
+          left: -29px;
+          opacity: 0.4;
+          z-index: -5;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 0 6px 6px;
+          border-color: transparent transparent $blue-color transparent;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sub-wrapper {
+    flex-direction: column;
+    align-items: center;
+    .subscription_card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
