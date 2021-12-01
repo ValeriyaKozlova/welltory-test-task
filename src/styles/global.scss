@@ -1,0 +1,24 @@
+@import './variables/_colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import './grid/grid';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Monserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 20px;
+  color: $font-color;
+  background: $background-color;
+}
+
+h1 {
+  font-style: 37px;
+  line-height: 40px;
+}
+
+@import './normalize/normalize';
