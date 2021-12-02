@@ -54,6 +54,13 @@ h3 {
   margin: auto;
   padding: 0 10px;
 }
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 27px;
+  }
+}
+
 @import './components/_button';
 @import './components/_header';
 @import './components/_footer';

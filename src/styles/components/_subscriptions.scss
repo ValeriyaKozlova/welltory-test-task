@@ -106,9 +106,8 @@
     flex-direction: column;
     align-items: center;
     .subscription_card {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      height: 132px;
+      margin: 12px 0;
     }
   }
 }

@@ -36,6 +36,9 @@
             border-image: $gradient;
             border-image-slice: 1;
           }
+          &.d-md-none {
+            display: none;
+          }
         }
       }
     }
@@ -100,6 +103,16 @@
         p {
           &:first-child {
             text-align: left;
+          }
+        }
+        &.header-info {
+          p {
+            &.d-md-none {
+              display: block;
+            }
+            &.d-s-none {
+              display: none;
+            }
           }
         }
       }

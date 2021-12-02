@@ -11,8 +11,10 @@ export default function SubscriptionsInfoSection() {
       <div className="info-wrapper">
         <div className="grid-container header-info">
           <p>What you get</p>
-          <p>For free</p>
-          <p className="pro">in Pro</p>
+          <p className="d-s-none">For free</p>
+          <p className="d-md-none">Free</p>
+          <p className="pro d-md-none">Pro</p>
+          <p className="pro d-s-none">in Pro</p>
         </div>
         {points.map(point => {
           return <SubscriptionInfo key={point._id} point={point} />
