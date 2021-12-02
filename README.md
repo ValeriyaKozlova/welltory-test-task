@@ -8,4 +8,4 @@ Technologies:
 2.  Css/Sass
 3.  Figma (design)
 
-You can visite the result [here ](https://valeriyakozlova.github.io/valeriyakozlova.github.io-Welltory/)
+You can visite the result [here ](https://valeriyakozlova.github.io/valeriyakozlova.github.io/)
