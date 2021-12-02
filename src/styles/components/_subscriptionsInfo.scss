@@ -24,6 +24,7 @@
       }
       &.header-info {
         p {
+          border-color: transparent;
           border-bottom: 1px solid grey;
           font-size: 22px;
           line-height: 25px;
@@ -31,13 +32,11 @@
             color: transparent;
             background-clip: text;
             background-image: $gradient;
+            border: 0;
             border-bottom: 4px solid grey;
             border-color: $gradient;
             border-image: $gradient;
             border-image-slice: 1;
-            border-left: 0px;
-            border-right: 0px;
-            border-top: 0px;
           }
           &.d-md-none {
             display: none;

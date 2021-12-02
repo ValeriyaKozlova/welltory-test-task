@@ -46,6 +46,7 @@
       }
       .info {
         opacity: 1;
+        text-align-last: left;
       }
     }
     .cart-wrapper-price {
@@ -106,6 +107,7 @@
     flex-direction: column;
     align-items: center;
     .subscription_card {
+      width: 100%;
       height: 132px;
       margin: 12px 0;
     }
