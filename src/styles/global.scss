@@ -1,6 +1,5 @@
 @import './variables/_colors.scss';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-// @import './grid/grid';
 @import './normalize/normalize';
 
 html {
@@ -33,7 +32,6 @@ h2,
 h3 {
   font-size: 22px;
   font-weight: normal;
-  line-height: 25px;
 }
 
 section {
@@ -49,7 +47,7 @@ h3 {
 }
 .font-s {
   font-size: 12px;
-  line-height: 18px;
+  opacity: 0.4;
 }
 .container {
   max-width: 1170px;

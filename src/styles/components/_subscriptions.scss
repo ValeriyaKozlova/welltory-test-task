@@ -30,9 +30,6 @@
         border-radius: 4px;
         z-index: -1;
       }
-      // border-image: $gradient;
-      // border-image-slice: 1;
-      // border-radius: 4px;
       .off-wrapper {
         background: $yellow-color;
         color: $ink-color;
@@ -46,6 +43,9 @@
         .price {
           color: $yellow-color;
         }
+      }
+      .info {
+        opacity: 1;
       }
     }
     .cart-wrapper-price {
@@ -66,8 +66,10 @@
       }
     }
     .info {
+      transition: all 0.2s;
       font-size: 12px;
       text-align-last: left;
+      opacity: 0.4;
     }
     .off-wrapper {
       position: absolute;

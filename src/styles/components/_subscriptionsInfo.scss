@@ -1,5 +1,8 @@
 .section-info {
   margin-top: 70px;
+  h2 {
+    margin-bottom: 50px;
+  }
   .info-wrapper {
     display: flex;
     justify-content: center;
@@ -77,6 +80,9 @@
               transform-origin: bottom right;
             }
           }
+        }
+        &:last-of-type {
+          border-bottom: none;
         }
       }
     }

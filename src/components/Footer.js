@@ -11,13 +11,13 @@ function Footer() {
     <footer>
       <div className="container footer">
         <div className="footer-download">
+          <span>Get the mobile app</span>
           <ul>
-            <span>Get the mobile app</span>
             <li>
-              <a href="https://itunes.apple.com/app/welltory-personal-nyj-analitik/id1074367771?mt=8">
+              <a target="_blank" rel="noopener noreferrer" href="https://itunes.apple.com/app/welltory-personal-nyj-analitik/id1074367771?mt=8">
                 <img src={apple} alt="apple-logo" />
               </a>
-              <a href="https://play.google.com/store/apps/details?id=com.welltory.client.android">
+              <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.welltory.client.android">
                 <img src={google} alt="google-logo" />
 
               </a>
@@ -26,28 +26,28 @@ function Footer() {
         </div>
         <div className="footer-social">
           <nav className="footer-terms">
-            <a href="https://welltory.com/terms/">Terms of use</a>
-            <a href="https://welltory.com/privacy/">Privacy policy</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://welltory.com/terms/">Terms of use</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://welltory.com/privacy/">Privacy policy</a>
           </nav>
           <ul>
             <li>
-              <a href="https://twitter.com/welltory">
+              <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/welltory">
                 <img src={twitter} alt="twitter-logo" />
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/welltory">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/welltory">
                 <img src={facebook} alt="facebook-logo" />
 
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/welltory/">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/welltory/">
                 <img src={instagram} alt="instagram-logo" />
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/company/welltory">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/welltory">
                 <img src={linkedin} alt="linkedin-logo" />
               </a>
             </li>
